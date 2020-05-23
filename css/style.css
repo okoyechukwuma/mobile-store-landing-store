@@ -62,8 +62,8 @@ html{
 
 .landing-view{
     display: flex;
-    margin-top: 2rem;
-    padding: 10rem;
+    margin-top: 10rem;
+    padding: 2rem;
 }
 
 .left-view{
