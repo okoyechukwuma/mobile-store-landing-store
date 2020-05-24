@@ -13,16 +13,18 @@ html{
 
 #home{
     width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-rows: min-content 1fr;
 }
 
 #header{
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
+  
   z-index: 10;
 }
 
@@ -350,10 +352,6 @@ html{
 
 
 @media(max-width: 850px){
-  #home{
-    height: 100%;
-  }
-
   .landing-view{
     flex-direction: column-reverse;
     align-items: center;
@@ -415,7 +413,26 @@ html{
 }
 
 @media(max-width: 500px){
+  #home{
+    height: 100%;
+  }
+
+  .nav-link a{
+    font-size: 1.6rem;
+    }
+
+  .right-view{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #header-img{
+    width: 100%;
+    object-fit: cover;
+  }
+
   #about{
+    width: 100%;
     height: 200px;
   }
 
@@ -430,6 +447,10 @@ html{
 
   .about-container a{
     width: 50%;
+  }
+
+  iframe{
+    width: 350px;
   }
 
   .flex{
